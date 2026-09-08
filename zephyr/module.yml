@@ -3,6 +3,176 @@
 
 name: hal_silabs_extra
 build:
+  cmake-ext: True
+  kconfig-ext: True
   depends:
     - hal_silabs
+    - openthread
+blobs:
+  # OpenThread FTD Stack Library with CoAP support
+  - path: simplicity_sdk/openthread/libsl_ot_stack_ftd_coap_efr32mg21_gcc.a
+    sha256: b0bfa2a65b931a6debed0e941478dab5774f9bd3ea948eeadccc2878dd768341
+    type: lib
+    version: "2026.6.1"
+    license-path: LICENSES/LicenseRef-MSLA.txt
+    url: https://artifacts.silabs.net/artifactory/api/lfs/gsdk
+    description: "OpenThread FTD Stack Library with CoAP support"
+    doc-url: https://github.com/SiliconLabsSoftware/sisdk-release
+    size: 1721998
+    fetcher: lfs
+  - path: simplicity_sdk/openthread/libsl_ot_stack_ftd_coap_efr32mg24_gcc.a
+    sha256: 5c1eb2747596f79e1588caeb1ec7c2764c3cfbf20329013ee9a3e22c282b64d9
+    type: lib
+    version: "2026.6.1"
+    license-path: LICENSES/LicenseRef-MSLA.txt
+    url: https://artifacts.silabs.net/artifactory/api/lfs/gsdk
+    description: "OpenThread FTD Stack Library with CoAP support"
+    doc-url: https://github.com/SiliconLabsSoftware/sisdk-release
+    size: 1721998
+    fetcher: lfs
+  - path: simplicity_sdk/openthread/libsl_ot_stack_ftd_coap_efr32mg26_gcc.a
+    sha256: 604f54f2a7e2ae350f079071bd2bde34beda7d3ada3ee19c5f7f2cf188e1e7a7
+    type: lib
+    version: "2026.6.1"
+    license-path: LICENSES/LicenseRef-MSLA.txt
+    url: https://artifacts.silabs.net/artifactory/api/lfs/gsdk
+    description: "OpenThread FTD Stack Library with CoAP support"
+    doc-url: https://github.com/SiliconLabsSoftware/sisdk-release
+    size: 1721998
+    fetcher: lfs
+  - path: simplicity_sdk/openthread/libsl_ot_stack_ftd_coap_simg301_gcc.a
+    sha256: 203fbd1d995a65e94fb1277feb6a11ac4d501dc0892a4ffa3daa3aa63621a90a
+    type: lib
+    version: "2026.6.1"
+    license-path: LICENSES/LicenseRef-MSLA.txt
+    url: https://artifacts.silabs.net/artifactory/api/lfs/gsdk
+    description: "OpenThread FTD Stack Library with CoAP support"
+    doc-url: https://github.com/SiliconLabsSoftware/sisdk-release
+    size: 1722018
+    fetcher: lfs
 
+  # OpenThread FTD Stack Library
+  - path: simplicity_sdk/openthread/libsl_ot_stack_ftd_efr32mg21_gcc.a
+    sha256: 139d9213f19855d48749e2cdaefebf34ca0c7d7007ef91c1bdb5b711edb347f0
+    type: lib
+    version: "2026.6.1"
+    license-path: LICENSES/LicenseRef-MSLA.txt
+    url: https://artifacts.silabs.net/artifactory/api/lfs/gsdk
+    description: "OpenThread FTD Stack Library"
+    doc-url: https://github.com/SiliconLabsSoftware/sisdk-release
+    size: 1660964
+    fetcher: lfs
+  - path: simplicity_sdk/openthread/libsl_ot_stack_ftd_efr32mg24_gcc.a
+    sha256: 8b4aafc598d0e52966df7e011770b6b6f2fd1a9d758f26af97d17824cc6b7afa
+    type: lib
+    version: "2026.6.1"
+    license-path: LICENSES/LicenseRef-MSLA.txt
+    url: https://artifacts.silabs.net/artifactory/api/lfs/gsdk
+    description: "OpenThread FTD Stack Library"
+    doc-url: https://github.com/SiliconLabsSoftware/sisdk-release
+    size: 1660964
+    fetcher: lfs
+  - path: simplicity_sdk/openthread/libsl_ot_stack_ftd_efr32mg26_gcc.a
+    sha256: adef734760cc7cfdc47ed2c3c0ac9b57cc8f89c3bb6f273e85ef0d2d1b823244
+    type: lib
+    version: "2026.6.1"
+    license-path: LICENSES/LicenseRef-MSLA.txt
+    url: https://artifacts.silabs.net/artifactory/api/lfs/gsdk
+    description: "OpenThread FTD Stack Library"
+    doc-url: https://github.com/SiliconLabsSoftware/sisdk-release
+    size: 1660964
+    fetcher: lfs
+  - path: simplicity_sdk/openthread/libsl_ot_stack_ftd_simg301_gcc.a
+    sha256: 036a0dab8350387e15096d7d9eb6901b84cbe367b3b0f2c72cc3bd3950989e42
+    type: lib
+    version: "2026.6.1"
+    license-path: LICENSES/LicenseRef-MSLA.txt
+    url: https://artifacts.silabs.net/artifactory/api/lfs/gsdk
+    description: "OpenThread FTD Stack Library"
+    doc-url: https://github.com/SiliconLabsSoftware/sisdk-release
+    size: 1660984
+    fetcher: lfs
+
+  # OpenThread FTD Stack Library with Multi-Instance Support
+  - path: simplicity_sdk/openthread/libsl_ot_stack_ftd_mi_coap_efr32mg21_gcc.a
+    sha256: 0468f5c76475b8d0355246db8eecd9e94cc6f37f42a90ce725d0b3bed85697ee
+    type: lib
+    version: "2026.6.1"
+    license-path: LICENSES/LicenseRef-MSLA.txt
+    url: https://artifacts.silabs.net/artifactory/api/lfs/gsdk
+    description: "OpenThread FTD Stack Library with Multi-Instance Support"
+    doc-url: https://github.com/SiliconLabsSoftware/sisdk-release
+    size: 1735142
+    fetcher: lfs
+  - path: simplicity_sdk/openthread/libsl_ot_stack_ftd_mi_coap_efr32mg24_gcc.a
+    sha256: ef085b251dd50398f4e3e115895cce6819c2f703379150b27c5f9a853c3f5b42
+    type: lib
+    version: "2026.6.1"
+    license-path: LICENSES/LicenseRef-MSLA.txt
+    url: https://artifacts.silabs.net/artifactory/api/lfs/gsdk
+    description: "OpenThread FTD Stack Library with Multi-Instance Support"
+    doc-url: https://github.com/SiliconLabsSoftware/sisdk-release
+    size: 1735142
+    fetcher: lfs
+  - path: simplicity_sdk/openthread/libsl_ot_stack_ftd_mi_coap_efr32mg26_gcc.a
+    sha256: 0ca44e45ece18ac2dc0d831c63558e8147f29746236764e800eeb54ebce2a17e
+    type: lib
+    version: "2026.6.1"
+    license-path: LICENSES/LicenseRef-MSLA.txt
+    url: https://artifacts.silabs.net/artifactory/api/lfs/gsdk
+    description: "OpenThread FTD Stack Library with Multi-Instance Support"
+    doc-url: https://github.com/SiliconLabsSoftware/sisdk-release
+    size: 1735142
+    fetcher: lfs
+  - path: simplicity_sdk/openthread/libsl_ot_stack_ftd_mi_coap_simg301_gcc.a
+    sha256: 5078b9d58b00ec80a61fea19af2da2c634fd6bed4afe497d413871c9353cd209
+    type: lib
+    version: "2026.6.1"
+    license-path: LICENSES/LicenseRef-MSLA.txt
+    url: https://artifacts.silabs.net/artifactory/api/lfs/gsdk
+    description: "OpenThread FTD Stack Library with Multi-Instance Support"
+    doc-url: https://github.com/SiliconLabsSoftware/sisdk-release
+    size: 1735158
+    fetcher: lfs
+
+  # OpenThread TCP Library
+  - path: simplicity_sdk/openthread/libsl_ot_stack_tcp_efr32mg21_gcc.a
+    sha256: e48e3c2652218e651505cb327630cda5d9766dfccd2900a112860991c1460c11
+    type: lib
+    version: "2026.6.1"
+    license-path: LICENSES/LicenseRef-MSLA.txt
+    url: https://artifacts.silabs.net/artifactory/api/lfs/gsdk
+    description: "OpenThread TCP Library"
+    doc-url: https://github.com/SiliconLabsSoftware/sisdk-release
+    size: 302298
+    fetcher: lfs
+  - path: simplicity_sdk/openthread/libsl_ot_stack_tcp_efr32mg24_gcc.a
+    sha256: 59e774886559bed49edeb43d64eeedadb3028bc1622549cd2116b69e14967be8
+    type: lib
+    version: "2026.6.1"
+    license-path: LICENSES/LicenseRef-MSLA.txt
+    url: https://artifacts.silabs.net/artifactory/api/lfs/gsdk
+    description: "OpenThread TCP Library"
+    doc-url: https://github.com/SiliconLabsSoftware/sisdk-release
+    size: 302298
+    fetcher: lfs
+  - path: simplicity_sdk/openthread/libsl_ot_stack_tcp_efr32mg26_gcc.a
+    sha256: 3d3bcacf45d9c56c8c6ad7e8e38b69cd0614da994f474e237547e456701ca9eb
+    type: lib
+    version: "2026.6.1"
+    license-path: LICENSES/LicenseRef-MSLA.txt
+    url: https://artifacts.silabs.net/artifactory/api/lfs/gsdk
+    description: "OpenThread TCP Library"
+    doc-url: https://github.com/SiliconLabsSoftware/sisdk-release
+    size: 302298
+    fetcher: lfs
+  - path: simplicity_sdk/openthread/libsl_ot_stack_tcp_simg301_gcc.a
+    sha256: bd2df2141058b3d0012e3dc59837a2c25da28f001faa0e9acef2c4f48ce95abf
+    type: lib
+    version: "2026.6.1"
+    license-path: LICENSES/LicenseRef-MSLA.txt
+    url: https://artifacts.silabs.net/artifactory/api/lfs/gsdk
+    description: "OpenThread TCP Library"
+    doc-url: https://github.com/SiliconLabsSoftware/sisdk-release
+    size: 302270
+    fetcher: lfs
